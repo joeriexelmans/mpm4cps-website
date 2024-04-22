@@ -4,13 +4,13 @@ import {useColorScheme, useScrollIntoView, useWindowScroll} from '@mantine/hooks
 import {IconRobot, IconExternalLink} from '@tabler/icons-react';
 import '@mantine/core/styles.css';
 
-import Home from "./Home";
-import CallForPapers from "./CallForPapers";
-import Program from "./Program";
-import Committees from "./Committees";
-import ImportantDates from "./ImportantDates";
-import Contacts from "./Contacts";
-import PreviousEvents from "./PreviousEvents";
+import Home from "./pages/Home";
+import CallForPapers from "./pages/CallForPapers";
+import Program from "./pages/Program";
+import Committees from "./pages/Committees";
+import ImportantDates from "./pages/ImportantDates";
+import Contacts from "./pages/Contacts";
+import PreviousEvents from "./pages/PreviousEvents";
 
 // Set by WebPack during build:
 declare const REVISION: string;
