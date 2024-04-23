@@ -2,7 +2,8 @@ import * as React from "react";
 import * as M from "@mantine/core";
 
 export default function() {
-  return <p>
+  return <>
+    <p></p>
     <M.List withPadding>
       <M.List.Item><b><M.Anchor href="http://msdl.uantwerpen.be/conferences/MPM4CPS/2024/">MPM4CPS 2024</M.Anchor></b></M.List.Item>
       <M.List.Item><b><M.Anchor href="http://msdl.uantwerpen.be/conferences/MPM4CPS/2023/">MPM4CPS 2023</M.Anchor></b></M.List.Item>
@@ -19,5 +20,5 @@ export default function() {
       <M.List.Item><b><M.Anchor href="http://avalon.aut.bme.hu/~mesztam/conferences/mpm07/">MPM 2007</M.Anchor></b></M.List.Item>
       <M.List.Item><b><M.Anchor href="http://avalon.aut.bme.hu/~mesztam/conferences/mpm06/">MPM 2006</M.Anchor></b></M.List.Item>
     </M.List>
-  </p>;
+  </>;
 }
