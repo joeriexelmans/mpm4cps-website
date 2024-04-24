@@ -21,4 +21,4 @@ jobs:
     - name: Install dependencies
       run: pnpm install
     - name: Webpack Build
-      run: pnpm build
+      run: CI=false pnpm build
