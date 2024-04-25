@@ -71,11 +71,27 @@ export default function App(props: {}) {
     [React.useRef(), "Previous Events", <PreviousEvents/>],
   ];
 
-  function navigateToRef(ref: React.MutableRefObject<any>) {
-    const targetY = scroll.y + ref.current?.getBoundingClientRect().top - SCROLL_OFFSET;
-    scrollTo({x: 0, y: targetY});
-    setNavigationOpened(false);    
+  function navigateToRef(ref: React.MutableRefObject<HTMLElement>) {
+    ref.current && scrollToElement(ref.current);
   }
+
+  function scrollToElement(element: HTMLElement) {
+    const elementRelY = element.getBoundingClientRect().top;
+    const targetY = scroll.y + elementRelY - SCROLL_OFFSET;
+    scrollTo({x: 0, y: targetY});
+    setNavigationOpened(false);
+  }
+
+  // React.useEffect(() => {
+  //   window.addEventListener("hashchange", event => {
+  //     const hash = new URL(event.newURL).hash;
+  //     const element = document.getElementById(hash);
+  //     console.log(element);
+  //     if (element) {
+  //       scrollToElement(element);
+  //     }
+  //   })
+  // }, [])
 
   // The `preval` macro will run during build time:
   const lastUpdated = new Date(preval`module.exports = Date.now();`);
@@ -151,8 +167,9 @@ export default function App(props: {}) {
             <M.Anchor
               ref={ref}
               href={toAnchor(label)}
+              onClick={() => navigateToRef(ref)}
               id={toAnchor(label)}
-              onClick={() => navigateToRef(ref)}>
+            >
               <M.Title order={2}>{label}</M.Title>
             </M.Anchor>
             {element}

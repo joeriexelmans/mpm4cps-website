@@ -15,7 +15,7 @@ export default function() {
     MPM4CPS is the continuation of the successful MPM series of MODELS workshops aiming at defining the future directions of this emerging research area by bringing together world experts for an intense 1-day workshop.
     </p>
 
-    <p>Organizers</p>
+{/*    <p>Organizers</p>
     <M.List withPadding>
       <M.List.Item><strong>Moussa Amrani</strong> &nbsp; University of Namur, <M.Anchor href="mailto:moussa.amrani@unamur.be">moussa.amrani@unamur.be</M.Anchor></M.List.Item>
       <M.List.Item><strong>Randy Paredis</strong> &nbsp; University of Antwerp, <M.Anchor href="mailto:randy.paredis@uantwerpen.be">randy.paredis@uantwerpen.be</M.Anchor></M.List.Item>
@@ -33,6 +33,6 @@ export default function() {
       <M.Anchor href="mailto:gray@cs.ua.edu">gray@cs.ua.edu</M.Anchor></M.List.Item>
       <M.List.Item><strong>Vasco Amaral</strong> &nbsp; Universidade NOVA de Lisboa, 
       <M.Anchor href="mailto:vasco.amaral@fct.unl.pt">vasco.amaral@fct.unl.pt</M.Anchor></M.List.Item>
-    </M.List>
+    </M.List>*/}
   </>;
 }

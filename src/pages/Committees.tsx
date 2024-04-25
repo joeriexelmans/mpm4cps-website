@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as M from "@mantine/core";
+import {IconAlertTriangleFilled} from "@tabler/icons-react";
 
 export default function() {
   return <>
@@ -19,7 +20,11 @@ export default function() {
       <M.List.Item><strong>Robert Heinrich</strong>&emsp;Karlsruhe Institute of Technology (KIT), <M.Anchor href="mailto:robert.heinrich@kit.edu">robert.heinrich@kit.edu</M.Anchor></M.List.Item>
     </M.List>
 
-    <p>(Tentative, Unconfirmed) Program Committee</p>
+    <p>Program Committee</p>
+    <M.Alert variant="light" color="orange" title="Tentative!" icon={<IconAlertTriangleFilled />}>
+      The program committee is not yet confirmed.
+    </M.Alert>
+    <p></p>
     <M.List withPadding>
       <M.List.Item><strong>Rima Al-Ali</strong>&emsp;KB , Czech Republic, <M.Anchor href="mailto:rima.alali@gmail.com">rima.alali@gmail.com</M.Anchor></M.List.Item>
       <M.List.Item><strong>Shaukat Ali</strong>&emsp;Simula Research Laboratory, Norway, <M.Anchor href="mailto:shaukat@simula.no">shaukat@simula.no</M.Anchor></M.List.Item>
